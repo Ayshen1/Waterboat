@@ -1,0 +1,76 @@
+@mixin header-icons{
+    padding: 11px;
+    border-radius: 50%;
+    background: #1089ff;
+    color: white;
+    font-size: 18px;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin box1-icons{
+    margin: 10px;
+    padding: 24px;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    transition-duration: .8sn;
+    background-color: white;
+    border-radius: 50%;
+}
+@mixin box1-icons-hover{
+    margin: 10px;
+    padding: 24px;
+    font-size: 23px;
+    color: white;
+    transition-duration: .8sn;
+    background-color: #1089ff;
+    border-radius: 50%;
+}
+@mixin btn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1089ff;
+    border: #1089ff;
+    color: white;
+    font-family: $font-oswald;
+    border-radius: 5px;
+}
+@mixin btn-a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: "Oswald", sans-serif;
+}
+@mixin center-text{
+    span {
+        padding-top: 1rem;
+        color: $background-blue;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    h3 {
+        position: relative;
+        font-size: 1.75rem;
+        font-family: $font-oswald;
+        font-weight: 400;
+        padding-bottom: 20px;
+
+    }
+
+    h3::after {
+
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        width: 60px;
+        height: 2px;
+        background: #1089ff;
+
+    }
+}

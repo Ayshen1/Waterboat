@@ -1,0 +1,93 @@
+    // / Navbar-top start here
+    .nav-top {
+        width: 100%;
+        padding: 2.2rem 0rem;
+
+        .row {
+            width: 100%;
+            @include flex-center ();
+
+
+            .col-3 , .col-3-navs {
+                width: 25%;
+                display: flex;
+
+                gap: 10px;
+
+                h4 {
+                    font-family: $font-oswald;
+                    font-size: 19px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #808080;
+                    font-family: $font-mulish;
+                }
+
+                i {
+                    @include header-icons()
+                }
+            }
+
+
+        }
+    }
+
+    .nav-bottom {
+        background-color: $background-blue;
+        height: 5.2rem;
+
+        .container {
+            height: 100%;
+
+
+            ul {
+                height: 100%;
+                @include flex-center ();
+
+                li {
+                    @include flex-center ();
+                    height: 100%;
+                    width: 10%;
+
+                    a {
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        color: white;
+                        font-family: $font-oswald;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 970px) {
+        .nav-bottom {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 970px) {
+        .nav-top .col-3-navs{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 770px) {
+        .box2{
+            .row{
+                
+                    display: flex;
+                    flex-direction: column;
+            }
+        }
+    }
+    @media only screen and (max-width: 770px) {
+        .box2{
+            .col-6{
+             width: 100%;
+            }
+        }
+    }
